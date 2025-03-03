@@ -1248,12 +1248,12 @@ body.section-switching.up .animation-block{
 	top:0;
 	width:50%;
 	height:100%;
-	background:#FFF;
+	background:#ffffff;
 	overflow:hidden;
 	z-index:99;
 	-webkit-transition:all .7s .3s ease;
 	-moz-transition:all .7s .3s ease;
-	transition:all .7s .3s ease;
+	transition:all 1s .3s ease;
 }
 #preloader > .left{
 	left:0;
@@ -1265,10 +1265,12 @@ body.loaded #preloader{
 	visibility:hidden;
 }
 body.loaded #preloader > .left{
-	left:-50%;
+	opacity: 0;
+	/* left:-50%; */
 }
 body.loaded #preloader > .right{
-	right:-50%;
+	opacity: 0;
+	/* right:-50%; */
 }
 body.loaded #preloader > .left,
 body.loaded #preloader > .right,
@@ -1402,13 +1404,21 @@ body.loaded #preloader .loader{
 		font-size:62px;
 	}
 }
-@media(max-width:550px){
+@media(max-width:660px){
 	.section{
 		padding-top:70px;
 	}
 	.section-block{
 		padding:70px;
 		padding-top:0;
+	}
+	.intro-text > h1{
+		font-size:48px;
+	}
+}
+@media(max-width:550px){
+	.intro-text > h1{
+		font-size:38px;
 	}
 }
 @media(max-width:400px){
