@@ -1,0 +1,14 @@
+.typewriter {
+    padding: 0px;
+    font-family: monospace;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid white;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

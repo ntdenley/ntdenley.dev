@@ -241,6 +241,7 @@ body.border-dark .main-content:after{
 .section-main{
 	background-size:cover;
 	background-image:url(../img/bg.jpg);
+	background-position: center;
 }
 .section-main:before{
 	content: ' ';
@@ -250,12 +251,14 @@ body.border-dark .main-content:after{
 	height:100%;
 	width:100%;
 	background:#303F9F;
-	opacity:.8;
+	opacity:.3;
 	z-index:-1;
 }
 .intro-text{
 	padding:20px;
-	text-align:center;
+	text-align:left;
+	margin-left: 5px;
+	display: inline-block;
 }
 .intro-text > h1{
 	margin:0;
@@ -264,16 +267,19 @@ body.border-dark .main-content:after{
 	font-weight:900;
 	letter-spacing:8px;
 	font-size:78px;
+	text-shadow: 4px 4px rgba(0,0,200, 0.7);
 }
 .intro-text > p{
 	font-size:18px;
 	color:#FFF;
-	color:rgba(255,255,255,.8);
+	color:rgba(185, 206, 255, 0.8);
 	margin-top:15px;
+	margin-left: 10px;
 	margin-bottom:0;
 	font-weight:300;
 	font-style:italic;
 	letter-spacing:2px;
+	text-shadow: 1px 1px rgba(0,0,200, 0.9);
 }
 .intro-text > .intro-btns{
 	margin-top:45px;
