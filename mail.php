@@ -37,6 +37,10 @@
 		}
 	
 	}
+	// Log the data for debugging
+	file_put_contents('mail_debug.log', print_r($data, true), FILE_APPEND);
+	file_put_contents('mail_debug.log', "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message\n", FILE_APPEND);
+
 	
 	echo json_encode($data);
 	

@@ -72,6 +72,26 @@ h1, h2, h3, h4, h5, h6{
 img{
 	max-width:100%;
 }
+ion-icon {
+	font-size: 64px;
+	color: #303F9F;
+	--ionicon-stroke-width: 24px;
+}
+.png-icon {
+	width: 64px;
+	height: 64px;
+}
+.png-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #303F9F;
+    opacity: 1; /* Adjust opacity as needed */
+    pointer-events: none;
+}
 
 
 /*=======================================================
@@ -536,7 +556,7 @@ body.section-switching.up .animation-block{
 }
 .about-text > p{
 	font-size:14px;
-	color:rgba(0,0,0,.4);
+	color:rgba(0,0,0,.6);
 	line-height:1.8em;
 }
 .about-text{
@@ -629,7 +649,7 @@ body.section-switching.up .animation-block{
 }
 .service > .content > p{
 	line-height:1.6em;
-	color:rgba(0,0,0,.4);
+	color:rgba(0,0,0,.6);
 	margin:0;
 }
 .skills-block .section-header{
@@ -776,6 +796,10 @@ body.section-switching.up .animation-block{
 /*=======================================================
 	Resume Section
 =======================================================*/
+.resume-section{
+	background: #f0f0f0;
+}
+
 .timeline-block .section-header{
 	margin-bottom:80px;
 }
@@ -1194,6 +1218,8 @@ body.section-switching.up .animation-block{
 	padding:19px 35px;
 }
 .contact-info{
+	display: flex;
+	align-items: center;
 	margin-bottom:25px;
 }
 .contact-info:before,
@@ -1210,6 +1236,7 @@ body.section-switching.up .animation-block{
 	float:left;
 	font-size:52px;
 	color:#303F9F;
+	margin-bottom: -10px;
 }
 .contact-info > p{
 	float:left;
