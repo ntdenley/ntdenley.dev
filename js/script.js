@@ -60,7 +60,7 @@ $(function(){
 				to { width: 100%; }
 			}
 			.typewriter {
-				animation: typing 3s steps(${numCharacters}, end) forwards, blink 1s step-end infinite;
+				animation: typing 2s steps(${numCharacters}, end) forwards, blink 1s step-end infinite;
 			}
 		`;
 
@@ -96,6 +96,17 @@ $(function(){
 					$('body').addClass('border-dark');
 				}else{
 					$('body').removeClass('border-dark');
+				}
+
+				// Reset typewriter animation
+				console.log(sect.attr('id'));
+				if(sect.attr('id') === 'intro'){
+					const typewriterElement = document.getElementById("typewriter-text");
+					typewriterElement.classList.remove('typewriter');
+					void typewriterElement.offsetWidth; // Trigger reflow
+					setTimeout(function() {
+						typewriterElement.classList.add('typewriter');
+					}, 1750);
 				}
 			}
 		}
